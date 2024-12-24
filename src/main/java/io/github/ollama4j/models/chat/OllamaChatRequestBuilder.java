@@ -88,8 +88,8 @@ public class OllamaChatRequestBuilder {
         return this;
     }
 
-    public OllamaChatRequestBuilder withGetJsonResponse() {
-        this.request.setReturnFormatJson(true);
+    public OllamaChatRequestBuilder withResponseClass(Class<?> responseClass) {
+        this.request.setResponseClass(responseClass);
         return this;
     }
 
